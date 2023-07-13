@@ -1,0 +1,119 @@
+// 首页的样式文件
+@import "common";
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?lwgg5y');
+    src: url('../fonts/icomoon.eot?lwgg5y#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?lwgg5y') format('truetype'),
+        url('../fonts/icomoon.woff?lwgg5y') format('woff'),
+        url('../fonts/icomoon.svg?lwgg5y#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+body {
+    min-width: 320px;
+    margin: 0 auto;
+    width: 15rem;
+    line-height: 1.5;
+    font-family: Arial, Helvetica;
+    background: #f2f2f2;
+}
+
+// 页面元素的rem计算公式， 页面元素的px/html 字体大小 50
+.search-content {
+    // 定位的盒子
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15rem;
+    height: (88rem / 50);
+    background-color: #FFC001;
+
+    .classfiy {
+        width: (44rem / 50);
+        height: (70rem / 50);
+        margin-top: (11rem / 50);
+        margin-right: (25em / 50);
+        margin-bottom: (7rem / 50);
+        margin-left: (24rem / 50);
+        background: url(../images/more.png) no-repeat 100% 100%;
+    }
+
+    .search {
+        flex: 1;
+        position: relative;
+
+        input {
+            outline: none;
+            padding-left: (55rem / 50);
+            border: 0;
+            height: (66rem / 50);
+            width: 100%;
+            border-radius: (33rem / 50);
+            background-color: #FFF2cc;
+            margin-top: (12rem / 50);
+            font-size: (25rem / 50);
+            color: #757575;
+
+        }
+
+        &::before {
+            content: '';
+            font-family: 'icomoon';
+            position: absolute;
+            top: (20rem / 50);
+            left: (12rem / 50);
+            font-size: 75%;
+            color: #757575;
+        }
+    }
+
+    .login {
+        width: (75rem / 50);
+        height: (70rem / 50);
+        line-height: (70rem / 50);
+        margin: (11rem / 50);
+        font-size: (25rem / 50);
+        text-align: center;
+        color: #fff;
+    }
+}
+
+.banner {
+    width: (750rem / 50);
+    height: (368rem / 50);
+    background: url(../images/q70.jpg) no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.nav {
+    width: (750rem / 50);
+
+    a {
+        float: left;
+        width: (150rem / 50);
+        height: (142rem / 50);
+
+        text-align: center;
+
+        img {
+            display: block;
+            width: (84rem / 50);
+            height: (84rem / 50);
+            margin: 0 auto;
+            margin-top: (10rem / 50);
+        }
+
+        span {
+            display: block;
+            font-size: (28rem / 50);
+            color: #333;
+        }
+    }
+}
